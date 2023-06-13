@@ -22,17 +22,17 @@ func Shorter(c echo.Context) error {
 	code := utils.GenerateCode()
 	//u.code = code
 	//c.Request().ParseForm()
-	//URL2 := c.FormValue("url")
+	URL2 := c.FormValue("url")
 	//url := c.Request().FormValue("url")
 	//echo.Logger.Debug(url)
 	//c.middleware.Logger()
-	Url2 := c.Param("url")
+	//Url2 := c.Param("url")
 	//Url2 := c.QueryParam("url")
 
-	db2.Create(&models.Url{URL: Url2, Code: code})
+	db2.Create(&models.Url{URL: URL2, Code: code})
 
-	//code2 := "http://localhost:8080" + "/" + code
-	return c.JSON(201, Url2)
+	code2 := "http://localhost:8080" + "/" + code
+	return c.JSON(201, code2)
 
 }
 
