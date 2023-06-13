@@ -10,6 +10,8 @@ import (
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	//	_ "github.com/jinzhu/gorm/dialects/mysql"
+	//	"github.com/jinzhu/gorm"
 )
 
 //var dsn string

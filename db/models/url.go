@@ -1,7 +1,14 @@
 package models
 
 type Url struct {
-	ID   uint   `gorm:"primary_key"`
-	URL  string `gorm:"not null"`
-	Code string `gorm:"unique_index;not null"`
+	ID   uint   `json:"primary_key"`
+	URL  string `json:"url"`
+	Code string `json:"unique_index;not null"`
 }
+
+// type Url struct {
+// 	//	gorm.Model
+// 	ID   uint   `json:"primary_key"`
+// 	URL  string `json:"not null"`
+// 	Code string `json:"unique_index;not null"`
+// }
