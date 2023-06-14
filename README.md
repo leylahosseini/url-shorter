@@ -9,7 +9,7 @@ $- go run main.go
 ### Sample Curl
 
 
- $- curl -X POST -H "Content-Type:application/json" -d '{"url":"https://www.google.com"}' http://localhost:8080/shortner
+ $- curl -X POST http://localhost:8080/shortner  -d 'url=https://www.google.com' 
  
  ### output :
  
